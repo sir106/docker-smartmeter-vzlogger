@@ -1,10 +1,10 @@
 ## vzlogger docker image
 
-this image is a i386 image
+this image is an armv7 / rpi image
 
 ### Pull the image
 
-docker pull treban/smartmeter-vzlogger
+docker pull sir/docker-smartmeter-vzlogger
 
 ### Run the container
 
