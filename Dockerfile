@@ -1,10 +1,13 @@
 ##################################################################
-# vzlogger docker file
-# VERSION               0.1
+# DOCKERFILE manualbuild for "vzlogger" 
+# TARGET: RaspberryPI (ARMv8) with "Strech"
+# see installation guide: https://wiki.volkszaehler.org/software/controller/vzlogger/installation_cpp-version
+#
+# since systemd is not working within docker, a patched install.sh is needed.
 ##################################################################
 
 # base image
-FROM debian:stable
+FROM FROM arm32v7/debian:stable
 
 LABEL Description="vzlogger docker image" Maintainer="trebankosta@gmail.com" Version="0.1"
 ENV DEBIAN_FRONTEND noninteractive
