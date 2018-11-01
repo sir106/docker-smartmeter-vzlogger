@@ -7,7 +7,8 @@
 ##################################################################
 
 # base image
-FROM arm32v7/debian:stable
+# FROM arm32v7/debian:stable
+FROM resin/raspberry-pi-debian:latest
 
 LABEL Description="rpi-vzlogger docker image" Maintainer="sir106@gmail.com" Version="0.1"
 ENV DEBIAN_FRONTEND noninteractive
