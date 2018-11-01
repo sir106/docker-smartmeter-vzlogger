@@ -7,6 +7,7 @@
 FROM debian:stable
 
 LABEL Description="vzlogger docker image" Maintainer="trebankosta@gmail.com" Version="0.1"
+ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y upgrade
 RUN apt-get -y install sudo build-essential git-core cmake pkg-config subversion  \
