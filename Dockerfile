@@ -9,7 +9,7 @@
 # base image
 FROM arm32v7/debian:stable
 
-LABEL Description="vzlogger docker image" Maintainer="sir106@gmail.com" Version="0.1"
+LABEL Description="rpi-vzlogger docker image" Maintainer="sir106@gmail.com" Version="0.1"
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update && apt-get -y upgrade
